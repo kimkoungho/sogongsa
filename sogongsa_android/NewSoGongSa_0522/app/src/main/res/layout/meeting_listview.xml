@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box_corner"
+    android:padding="3dp"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/meeting_image_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerInside"/>
+
+    <!-- 모임 타이틀, 모임 작성자, 모임 생성일 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/crown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/crown"/>
+
+        <!-- ellipsisze는 긴 문장을 ... 으로 표시 -->
+        <TextView
+            android:id="@+id/meeting_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="30dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Title">
+        </TextView>
+
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/meeting_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:textSize="17dp"
+                android:text="작성자">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 모임의 정원 수 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/meeting_personNum_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:text="Num">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

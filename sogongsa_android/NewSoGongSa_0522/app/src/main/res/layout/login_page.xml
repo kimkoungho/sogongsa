@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+아이디와 패스워드를 요구하는 로그인 페이지
+아이디 값과 패스워드 값을 입력받는다.
+-->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/sogongsa_Basic_Color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="로그인"
+            android:textSize="70dp"
+            android:textColor="#ffffff">
+        </TextView>
+    </TableRow>
+
+    <!-- 아이디 에디트 텍스트 -->
+    <!-- //학번 7자리 -->
+    <TableRow
+        android:gravity="center_horizontal">
+        <EditText
+            android:id="@+id/id_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:maxLength="7"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="아이디">
+        </EditText>
+    </TableRow>
+
+    <!-- 비밀번호 에디트 텍스트 -->
+    <TableRow
+        android:gravity="center_horizontal">
+        <EditText
+            android:id="@+id/pw_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:textSize="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:hint="패스워드"
+            android:inputType="textPassword">
+        </EditText>
+    </TableRow>
+
+    <View
+        android:layout_height="20dp">
+    </View>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/save_id"
+            android:text="아이디 저장"
+            android:textSize="16dp">
+        </CheckBox>
+
+        <!-- 자동로그인 체크박스와 텍스트 -->
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:text="자동 로그인"
+            android:textSize="16dp">
+        </CheckBox>
+    </TableRow>
+
+    <View
+        android:layout_height="20dp">
+    </View>
+
+    <!-- 로그인 버튼과 회원가입 버튼 -->
+    <TableRow
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:text="로그인"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:background="@drawable/btn_click">
+        </Button>
+    </TableRow>
+
+    <View
+        android:layout_height="10dp">
+    </View>
+
+    <TableRow
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:background="@drawable/btn_click">
+        </Button>
+    </TableRow>
+
+</TableLayout>

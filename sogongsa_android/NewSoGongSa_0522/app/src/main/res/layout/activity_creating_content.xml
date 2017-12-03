@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<ScrollView
+    android:id="@+id/ccScrollView_id"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Page.CreatingGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000">
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/sogongsa_Basic_Color"
+            android:text="CreateMeet"
+            android:textSize="40dp">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000">
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="사진 등록"
+            android:textSize="25dp">
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/box_corner">
+            <ImageView
+                android:id="@+id/userImage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/normal">
+            </ImageView>
+
+            <ImageButton
+                android:id="@+id/camera_Btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp">
+            </ImageButton>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="모임 제목"
+                android:textSize="25dp">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp">
+            </View>
+
+            <EditText
+                android:id="@+id/create_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:hint="20자 이내"
+                android:background="@drawable/box_corner">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/box_corner">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="모임\n선택"
+                android:textSize="20dp">
+            </TextView>
+            <Spinner
+                android:id="@+id/meeting_select"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:entries="@array/meeting">
+            </Spinner>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="모임\n인원"
+                android:textSize="20dp">
+            </TextView>
+            <EditText
+                android:id="@+id/create_num"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="number"
+                android:maxLength="2">
+            </EditText>
+        </LinearLayout>
+
+        <!-- 위에는 모임 제목, 밑에는 모임 내용을 입력-->
+        <!-- ****************************************************************** -->
+        \
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="모임 내용"
+            android:textSize="25dp">
+        </TextView>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:singleLine="true"
+            android:lines="3"
+            android:id="@+id/create_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:hint="100자 이내"
+            android:maxLength="100"
+            android:background="@drawable/box_corner">
+        </EditText>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/complete_id"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:text="완료"
+                android:clickable="true"
+                android:background="@drawable/btn_click">
+            </TextView>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/cancel_id"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:text="취소"
+                android:clickable="true"
+                android:background="@drawable/btn_click">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

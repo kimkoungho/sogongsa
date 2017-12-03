@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/sogongsa_Basic_Color</color>
+    <color name="colorPrimaryDark">@color/sogongsa_Light_Basic_Color</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2d24fb</color>
+    <color name="result_border">#dddddd</color>
+    <color name="result_background">#f0f0f0</color>
+
+    <!--
+     사계절에 따라서 calendar_Header의 색상을 변경한다.
+     -->
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+    <!--
+    today :: 오늘,
+    grayed_out :: 오늘을 제외한 날,
+    working_Day :: 소공사 회원의 일정이 있는 날
+    -->
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+    <color name="working_Day">@color/sogongsa_Basic_Color</color>
+
+    <!-- 소공사 앱의 기본적인 테마 색상 -->
+    <color name="sogongsa_Basic_Color">#ff7777</color>
+    <color name="sogongsa_Light_Basic_Color">#ff9494</color>
+</resources>

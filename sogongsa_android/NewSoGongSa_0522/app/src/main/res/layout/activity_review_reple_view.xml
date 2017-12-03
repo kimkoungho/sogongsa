@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13dp"
+    android:orientation="vertical"
+    android:background="@drawable/btn_normal"
+    tools:context=".Dialog.review_reple_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#000000">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Reple"
+            android:textSize="40dp"
+            android:textColor="@color/sogongsa_Basic_Color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#000000">
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ListView
+            android:id="@+id/reple_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1.5dp"
+            android:divider="#000000">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00e5ff">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_reple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="2"
+            android:maxLength="20"
+            android:hint="댓글 입력 ..."
+            android:textSize="20dp"
+            android:background="@android:drawable/editbox_background_normal">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reple_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="댓 글\n달 기"
+            android:background="@drawable/btn_click">
+        </Button>
+
+        <Button
+            android:id="@+id/reple_cancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="닫기"
+            android:background="@drawable/btn_click">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

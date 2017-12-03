@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+사용자 그룹내의 미팅에서 정하는 약속들의 리스트 아이템
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/box_corner"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <!-- 요일-->
+        <TextView
+            android:id="@+id/monthMeet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|center_vertical"
+            android:textSize="15dp"
+            android:text="4월"/>
+
+        <!-- 날짜-->
+        <TextView
+            android:id="@+id/dayMeet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|center_vertical"
+            android:textSize="15dp"
+            android:text="12일"/>
+
+        <!-- 시간-->
+        <TextView
+            android:id="@+id/timeMeet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center|center_vertical"
+            android:textSize="15dp"
+            android:text="오후\n6:20"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="5dp"
+        android:background="@drawable/box_corner"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.example.koungho632.newsogongsaapplication.View.CircularImageView
+                android:id="@+id/hobbyMeet"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/category_love">
+            </com.example.koungho632.newsogongsaapplication.View.CircularImageView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/groupMeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="10dp"
+                android:text="민턴꾼들"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/groupContentMeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="목요일 저녁 민턴꾼"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="5dp">
+            </View>
+
+            <TextView
+                android:id="@+id/personCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal">
+
+            <com.example.koungho632.newsogongsaapplication.View.CircularImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_black_location">
+            </com.example.koungho632.newsogongsaapplication.View.CircularImageView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/locationMeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="10dp"
+                android:text="체육관"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/moneyMeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:text="비용" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/request_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_click"
+            android:textSize="25dp"
+            android:text="신\n청">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

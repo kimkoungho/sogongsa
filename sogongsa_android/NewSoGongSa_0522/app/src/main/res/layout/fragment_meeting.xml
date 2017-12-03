@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+    <ListView
+        android:id="@+id/myMeeting_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#969696"
+        android:dividerHeight="1.5dp"
+        android:choiceMode="singleChoice">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_white_add_circle"/>
+
+</FrameLayout>

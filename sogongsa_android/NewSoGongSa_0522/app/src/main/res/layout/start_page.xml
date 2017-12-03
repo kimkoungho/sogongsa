@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+앱이 켜질 때 뜨는 초기 스플래시 페이지
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogongsa_Basic_Color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="80dp"
+        android:textColor="#ffffff"
+        android:text="소공사">
+    </TextView>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:background="#ffffff">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:text="소통하며 공유하는 사람들">
+    </TextView>
+
+</LinearLayout>

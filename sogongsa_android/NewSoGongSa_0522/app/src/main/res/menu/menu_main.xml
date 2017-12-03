@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Page.MainActivity">
+
+    <!--액션 버튼으로 나타나는 서치 아이템-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_white_search"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_noti"
+        android:icon="@drawable/noti"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.koungho632.newsogongsaapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_CALENDAR"/> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/SoGongSa_Theme">
+        <activity
+            android:name=".Page.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- start_page 액티비티 추가 -->
+        <!-- splash로 액티비티가 들어감 -->
+        <!--
+        screenOrientation = portrait는 가로로 모드를 진행
+        configChanges에 값을 주어 단말기 위치에 변화가 생겨도 그대로 유지
+        -->
+        <activity
+            android:name=".Page.start_page"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 스플래쉬 액티비티 이후에 -->
+        <!-- 로그인 화면이 나타난다. -->
+        <activity android:name=".Page.login_page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 회원가입 액티비티 -->
+        <activity android:name=".Page.signup_page"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Page.search_page" />
+
+        <activity android:name=".Page.CreatingGroup"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Dialog.CreatingDialog" />
+        <activity android:name=".Page.ProfileImageChange" />
+
+        <activity android:name=".Page.MeetingGroup"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Dialog.CustomDialog" />
+
+        <activity android:name=".Page.ChangePassword" />
+
+        <activity android:name=".Page.ChangePassword2" />
+
+        <activity android:name=".Page.Notification_page" />
+
+        <activity android:name=".Dialog.together_review"
+            android:theme="@android:style/Theme.Dialog"/>
+
+    </application>
+
+</manifest>

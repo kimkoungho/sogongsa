@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/btn_normal"
+    tools:context=".Dialog.together_review">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#000000">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Review"
+            android:textSize="40dp"
+            android:textColor="@color/sogongsa_Basic_Color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#000000">
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>
+
+    <!-- 동그란 프로필사진과 카메라 아이콘이 있는 레이아웃 -->
+    <!-- 프로필을 바로 촬영하거나 저장된 사진에서 설정가능 -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/review_Image"
+                android:layout_width="300dp"
+                android:layout_height="280dp"
+                android:background="@drawable/box_corner"
+                android:padding="30dp"
+                android:src="@drawable/default_review"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp">
+                <ImageButton
+                    android:id="@+id/review_change_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/camera">
+                </ImageButton>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <EditText
+            android:id="@+id/review_write_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="5"
+            android:maxLength="100"
+            android:padding="5dp"
+            android:hint="후기를 작성하세요"
+            android:background="@drawable/box_corner">
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/review_write_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="작성"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_click">
+        </Button>
+        <Button
+            android:id="@+id/review_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="취소"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_click">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
